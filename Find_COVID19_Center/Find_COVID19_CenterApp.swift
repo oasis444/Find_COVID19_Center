@@ -11,7 +11,7 @@ import SwiftUI
 struct Find_COVID19_CenterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SelectRegionView()
         }
     }
 }

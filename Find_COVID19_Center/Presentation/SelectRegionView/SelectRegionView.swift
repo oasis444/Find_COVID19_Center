@@ -19,8 +19,6 @@ struct SelectRegionView: View {
             ScrollView {
                 LazyVGrid(columns: items, spacing: 20) {
                     ForEach(Center.Sido.allCases) { sido in
-//                        let aaa = viewModel.$centers
-                        
                         let centers = viewModel.centers[sido] ?? []
                         NavigationLink(destination: CenterList(centers: centers)) {
                             SelectRegionItem(region: sido, count: centers.count)
