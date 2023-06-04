@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3374397B2A2B7BC10019B9F0 /* SelectRegionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374397A2A2B7BC10019B9F0 /* SelectRegionItem.swift */; };
+		3374397E2A2C4B080019B9F0 /* CenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374397D2A2C4B080019B9F0 /* CenterRow.swift */; };
+		337439802A2C7B3D0019B9F0 /* CenterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374397F2A2C7B3D0019B9F0 /* CenterList.swift */; };
+		337439842A2C7EDE0019B9F0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337439832A2C7EDE0019B9F0 /* MapView.swift */; };
 		337E39642A29C24500435FB1 /* Find_COVID19_CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E39632A29C24500435FB1 /* Find_COVID19_CenterApp.swift */; };
 		337E39662A29C24500435FB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E39652A29C24500435FB1 /* ContentView.swift */; };
 		337E39682A29C24600435FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337E39672A29C24600435FB1 /* Assets.xcassets */; };
@@ -15,9 +19,15 @@
 		337E39752A29C2B100435FB1 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E39742A29C2B100435FB1 /* Center.swift */; };
 		337E39772A29D55E00435FB1 /* CenterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E39762A29D55E00435FB1 /* CenterAPI.swift */; };
 		337E397A2A29DB9000435FB1 /* CenterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E39792A29DB9000435FB1 /* CenterNetwork.swift */; };
+		337E397C2A2A0A1000435FB1 /* SelectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E397B2A2A0A1000435FB1 /* SelectRegionView.swift */; };
+		337E397E2A2A0A3600435FB1 /* SelectRegionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E397D2A2A0A3600435FB1 /* SelectRegionVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3374397A2A2B7BC10019B9F0 /* SelectRegionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionItem.swift; sourceTree = "<group>"; };
+		3374397D2A2C4B080019B9F0 /* CenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterRow.swift; sourceTree = "<group>"; };
+		3374397F2A2C7B3D0019B9F0 /* CenterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterList.swift; sourceTree = "<group>"; };
+		337439832A2C7EDE0019B9F0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		337E39602A29C24500435FB1 /* Find_COVID19_Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Find_COVID19_Center.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337E39632A29C24500435FB1 /* Find_COVID19_CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_COVID19_CenterApp.swift; sourceTree = "<group>"; };
 		337E39652A29C24500435FB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +37,8 @@
 		337E39742A29C2B100435FB1 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		337E39762A29D55E00435FB1 /* CenterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPI.swift; sourceTree = "<group>"; };
 		337E39792A29DB9000435FB1 /* CenterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetwork.swift; sourceTree = "<group>"; };
+		337E397B2A2A0A1000435FB1 /* SelectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionView.swift; sourceTree = "<group>"; };
+		337E397D2A2A0A3600435FB1 /* SelectRegionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3374397C2A2BA7370019B9F0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				337439812A2C7EB80019B9F0 /* SelectRegionView */,
+				337439822A2C7ECD0019B9F0 /* CenterList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		337439812A2C7EB80019B9F0 /* SelectRegionView */ = {
+			isa = PBXGroup;
+			children = (
+				337E397B2A2A0A1000435FB1 /* SelectRegionView.swift */,
+				3374397A2A2B7BC10019B9F0 /* SelectRegionItem.swift */,
+				337E397D2A2A0A3600435FB1 /* SelectRegionVM.swift */,
+			);
+			path = SelectRegionView;
+			sourceTree = "<group>";
+		};
+		337439822A2C7ECD0019B9F0 /* CenterList */ = {
+			isa = PBXGroup;
+			children = (
+				3374397D2A2C4B080019B9F0 /* CenterRow.swift */,
+				3374397F2A2C7B3D0019B9F0 /* CenterList.swift */,
+				337439832A2C7EDE0019B9F0 /* MapView.swift */,
+			);
+			path = CenterList;
+			sourceTree = "<group>";
+		};
 		337E39572A29C24500435FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +104,7 @@
 				337E39652A29C24500435FB1 /* ContentView.swift */,
 				337E39732A29C27C00435FB1 /* Entities */,
 				337E39782A29D56800435FB1 /* Network */,
+				3374397C2A2BA7370019B9F0 /* Presentation */,
 				337E39672A29C24600435FB1 /* Assets.xcassets */,
 				337E39692A29C24600435FB1 /* Preview Content */,
 			);
@@ -166,10 +208,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				337E39752A29C2B100435FB1 /* Center.swift in Sources */,
+				337439842A2C7EDE0019B9F0 /* MapView.swift in Sources */,
+				3374397B2A2B7BC10019B9F0 /* SelectRegionItem.swift in Sources */,
+				337439802A2C7B3D0019B9F0 /* CenterList.swift in Sources */,
 				337E397A2A29DB9000435FB1 /* CenterNetwork.swift in Sources */,
+				3374397E2A2C4B080019B9F0 /* CenterRow.swift in Sources */,
 				337E39772A29D55E00435FB1 /* CenterAPI.swift in Sources */,
 				337E39722A29C27200435FB1 /* CenterAPIRespose.swift in Sources */,
+				337E397C2A2A0A1000435FB1 /* SelectRegionView.swift in Sources */,
 				337E39662A29C24500435FB1 /* ContentView.swift in Sources */,
+				337E397E2A2A0A3600435FB1 /* SelectRegionVM.swift in Sources */,
 				337E39642A29C24500435FB1 /* Find_COVID19_CenterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
