@@ -10,9 +10,11 @@ import Combine
 
 class SelectRegionVM: ObservableObject {
     /*
+     @ObservedObject가 되기 위해서는 반드시 ObservableObject 프로토콜을 따르는 클래스여야 합니다.
+     또한 각 프로퍼티 값이 바뀌었을 때 제대로 업데이트가 된 것을 모니터링하려면 해당 프로퍼티에는 @Published를 붙여서 퍼블리셔로 쓸 수 있도록 해야 합니다.
+     
      @Published를 사용하여 선언된 프로퍼티는 ObservableObject를 구현한 클래스 내에서 사용되어야 합니다.
      @Published는 감시자(property wrapper)로, 값의 변경을 관찰하고 구독자에게 알릴 수 있는 기능을 제공합니다.
-     해당 값을 가져올 때는 $를 사용하여 가져온다.
      */
     @Published var centers = [Center.Sido: [Center]]()
     private var cancellables = Set<AnyCancellable>()

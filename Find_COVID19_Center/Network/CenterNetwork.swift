@@ -26,7 +26,7 @@ class CenterNetwork {
         return getData(data: dataTaskPublisher)
     }
     
-    func getData(data: URLSession.DataTaskPublisher) -> AnyPublisher<[Center], URLError> {
+    private func getData(data: URLSession.DataTaskPublisher) -> AnyPublisher<[Center], URLError> {
         // tryMap: 각 요소에 변환 함수를 적용하고, 변환 중에 발생하는 오류를 처리할 수 있는 기능을 제공
         data.tryMap { data, response in
             guard let httpResponse = response as? HTTPURLResponse else { throw URLError(.unknown) }
